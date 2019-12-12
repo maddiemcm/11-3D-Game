@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://kenney_natureKit/Platform kit/mushrooms.glb" type="PackedScene" id=1]
+
+[node name="mushrooms" index="0" instance=ExtResource( 1 )]
