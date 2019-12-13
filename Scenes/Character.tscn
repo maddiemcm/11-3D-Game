@@ -22,68 +22,68 @@ material = SubResource( 4 )
 radius = 0.2
 height = 0.4
 
-[sub_resource type="SpatialMaterial" id=19]
+[sub_resource type="SpatialMaterial" id=6]
 albedo_color = Color( 0.501961, 0.835294, 1, 1 )
 
-[sub_resource type="PrismMesh" id=20]
-material = SubResource( 19 )
+[sub_resource type="PrismMesh" id=7]
+material = SubResource( 6 )
 size = Vector3( 0.1, 0.1, 0.2 )
 
-[sub_resource type="SpatialMaterial" id=21]
+[sub_resource type="SpatialMaterial" id=8]
 albedo_color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="SphereMesh" id=22]
-material = SubResource( 21 )
+[sub_resource type="SphereMesh" id=9]
+material = SubResource( 8 )
 radius = 0.04
 height = 0.1
 
-[sub_resource type="SphereShape" id=6]
+[sub_resource type="SphereShape" id=10]
 radius = 0.2
 
-[sub_resource type="SpatialMaterial" id=7]
+[sub_resource type="SpatialMaterial" id=11]
 albedo_color = Color( 0.164706, 0.0980392, 0.4, 1 )
 
-[sub_resource type="CylinderMesh" id=8]
-material = SubResource( 7 )
+[sub_resource type="CylinderMesh" id=12]
+material = SubResource( 11 )
 top_radius = 0.3
 bottom_radius = 0.15
 height = 0.5
 
-[sub_resource type="CylinderShape" id=9]
+[sub_resource type="CylinderShape" id=13]
 radius = 0.3
 height = 0.5
 
-[sub_resource type="SpatialMaterial" id=10]
+[sub_resource type="SpatialMaterial" id=14]
 
-[sub_resource type="CylinderMesh" id=11]
-material = SubResource( 10 )
+[sub_resource type="CylinderMesh" id=15]
+material = SubResource( 14 )
 top_radius = 0.05
 bottom_radius = 0.1
 height = 0.25
 
-[sub_resource type="CylinderShape" id=12]
+[sub_resource type="CylinderShape" id=16]
 radius = 0.1
 height = 0.25
 
-[sub_resource type="SpatialMaterial" id=13]
+[sub_resource type="SpatialMaterial" id=17]
 albedo_color = Color( 1, 0.909804, 0.670588, 1 )
 
-[sub_resource type="SphereMesh" id=14]
-material = SubResource( 13 )
+[sub_resource type="SphereMesh" id=18]
+material = SubResource( 17 )
 radius = 0.3
 height = 0.6
 
-[sub_resource type="SphereShape" id=15]
+[sub_resource type="SphereShape" id=19]
 radius = 0.3
 
-[sub_resource type="SpatialMaterial" id=16]
+[sub_resource type="SpatialMaterial" id=20]
 
-[sub_resource type="CapsuleMesh" id=17]
-material = SubResource( 16 )
+[sub_resource type="CapsuleMesh" id=21]
+material = SubResource( 20 )
 radius = 0.05
 mid_height = 0.5
 
-[sub_resource type="CapsuleShape" id=18]
+[sub_resource type="CapsuleShape" id=22]
 radius = 0.05
 height = 0.5
 
@@ -106,67 +106,67 @@ material/0 = null
 
 [node name="eyes" type="MeshInstance" parent="head"]
 transform = Transform( -0.0100357, -0.00156926, -0.999948, -0.988624, -0.150063, 0.0101575, -0.150071, 0.988675, -4.54212e-05, 0, 0.0236851, -0.151107 )
-mesh = SubResource( 20 )
+mesh = SubResource( 7 )
 material/0 = null
 
 [node name="MeshInstance" type="MeshInstance" parent="head/eyes"]
 transform = Transform( 1, 0, 2.55819e-09, 7.45058e-08, 0.999999, 3.35427e-09, -1.00016e-08, 7.58334e-10, 1, 0, -0.03, 0.045 )
-mesh = SubResource( 22 )
+mesh = SubResource( 9 )
 material/0 = null
 
 [node name="MeshInstance2" type="MeshInstance" parent="head/eyes"]
 transform = Transform( 1, 0, 2.54011e-09, 5.96046e-08, 0.999999, 3.46989e-09, -1.09329e-08, 4.36721e-09, 1, 0, -0.03, -0.045 )
-mesh = SubResource( 22 )
+mesh = SubResource( 9 )
 material/0 = null
 
 [node name="CollisionShape2" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22888, 0 )
-shape = SubResource( 6 )
+shape = SubResource( 10 )
 
 [node name="top" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.728979, 0 )
-mesh = SubResource( 8 )
+mesh = SubResource( 12 )
 material/0 = null
 
 [node name="CollisionShape3" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.730062, 0 )
-shape = SubResource( 9 )
+shape = SubResource( 13 )
 
 [node name="neck" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00505, 0 )
-mesh = SubResource( 11 )
+mesh = SubResource( 15 )
 material/0 = null
 
 [node name="CollisionShape4" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01029, 0 )
-shape = SubResource( 12 )
+shape = SubResource( 16 )
 
 [node name="movement_sphere" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.000824779, 0 )
-mesh = SubResource( 14 )
+mesh = SubResource( 18 )
 material/0 = null
 
 [node name="CollisionShape5" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.023098, 0 )
-shape = SubResource( 15 )
+shape = SubResource( 19 )
 
 [node name="arm" type="MeshInstance" parent="."]
 transform = Transform( 0.0140395, 0.822029, 0.569272, -0.0202668, 0.569445, -0.821779, -0.999696, 0, 0.0246547, 0.406859, 0.710262, 0 )
-mesh = SubResource( 17 )
+mesh = SubResource( 21 )
 material/0 = null
 
 [node name="CollisionShape6" type="CollisionShape" parent="."]
 transform = Transform( 0.0134009, 0.822037, 0.569277, -0.020711, 0.569434, -0.821776, -0.999696, -0.000777781, 0.0246561, 0.407, 0.71, 0 )
-shape = SubResource( 18 )
+shape = SubResource( 22 )
 
 [node name="arm2" type="MeshInstance" parent="."]
 transform = Transform( -0.0157927, 0.822024, -0.569234, -0.0190397, -0.569449, -0.821806, -0.999694, -0.00214045, 0.0246442, -0.407, 0.71, 0 )
-mesh = SubResource( 17 )
+mesh = SubResource( 21 )
 material/0 = null
 
 [node name="CollisionShape7" type="CollisionShape" parent="."]
 transform = Transform( -0.0145917, 0.822016, -0.569276, -0.0198861, -0.569463, -0.821776, -0.999696, -0.000670444, 0.0246561, -0.407, 0.71, 0 )
-shape = SubResource( 18 )
+shape = SubResource( 22 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.906012, 0.423251, 0, -0.423251, 0.906012, 0, 2.55177, 2.39971 )
+transform = Transform( 1, 0, 0, 0, 0.910069, 0.414458, 0, -0.414458, 0.910069, 0, 2.31653, 1.89616 )
