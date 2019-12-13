@@ -5,10 +5,12 @@
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -1, 0, 0, 0, 0, 0, -1, 0.25, 0, 0, 0.25, 0, 0, 0, 1, -1, 0, 1, 0, 0.25, 1, -1, 0.25, 1, 0, 0.25, 0, 0, 0, 0, 0, 0.25, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, -1, 0, 1, -1, 0, 0, -1, 0, 0, -1, 0.25, 0, -1, 0, 1, -1, 0.25, 1, 0, 0.25, 0, 0, 0.25, 1, -1, 0.25, 0, -1, 0.25, 1, -1, 0, 0, 0, 0, 0, -1, 0.25, 0, 0, 0.25, 0, 0, 0, 1, -1, 0, 1, 0, 0.25, 1, -1, 0.25, 1, 0, 0.25, 0, 0, 0, 0, 0, 0.25, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, -1, 0, 1, -1, 0, 0, -1, 0, 0, -1, 0.25, 0, -1, 0, 1, -1, 0.25, 1, 0, 0.25, 0, 0, 0.25, 1, -1, 0.25, 0, -1, 0.25, 1 )
 
-[node name="ground_dirt" instance=ExtResource( 1 )]
+[node name="ground_dirt" index="0" instance=ExtResource( 1 )]
 
 [node name="ground_dirt" parent="." index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
-[node name="CollisionShape" type="CollisionShape" parent="." index="1"]
+[node name="StaticBody" type="StaticBody" parent="ground_dirt" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="ground_dirt/StaticBody" index="0"]
 shape = SubResource( 1 )

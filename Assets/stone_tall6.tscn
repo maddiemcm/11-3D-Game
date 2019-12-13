@@ -10,5 +10,7 @@ points = PoolVector3Array( 0.221848, 0, 0.128084, 1.44382e-15, 0, 0.256168, 0.20
 [node name="stone_tall6" parent="." index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
-[node name="CollisionShape" type="CollisionShape" parent="." index="1"]
+[node name="StaticBody" type="StaticBody" parent="stone_tall6" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="stone_tall6/StaticBody" index="0"]
 shape = SubResource( 1 )
