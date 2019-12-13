@@ -7,5 +7,7 @@ points = PoolVector3Array( 4.67799e-13, 1, 5.0606e-13, 0, 0, 0, 0, 1, -1, 0, 0, 
 
 [node name="BlockDirt" index="0" instance=ExtResource( 1 )]
 
-[node name="CollisionShape" type="CollisionShape" parent="." index="1"]
+[node name="StaticBody" type="StaticBody" parent="blockDirt(Clone)" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="blockDirt(Clone)/StaticBody" index="0"]
 shape = SubResource( 1 )
