@@ -4,12 +4,9 @@ var gravity = Vector3.DOWN * 12
 var speed = 5
 var jump_speed = 5
 var spin = 0.1
-#var character
 
 var velocity = Vector3()
 var jump = false
-#func _ready():
-#	character = get_node("Character")
 	
 func _physics_process(delta):
 	velocity += gravity * delta
@@ -17,13 +14,6 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector3.UP)
 	if jump and is_on_floor():
 		velocity.y = jump_speed
-	
-#	if is_moving:
-#		var angle = atan2(velocity.x, velocity.z)
-#		var char_rot = character.get_rotation()
-#		char_rot.y = angle
-#		character.set_rotation(char_rot)
-	
 	
 func get_input():
 	var vy = velocity.y
