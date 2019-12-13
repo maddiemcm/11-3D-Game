@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Music/y2mate.com - poppy_circulate_audio_LK5lmumKuvs.wav" type="AudioStream" id=2]
@@ -40,6 +40,7 @@
 [ext_resource path="res://Assets/BlockCliffCorner.tscn" type="PackedScene" id=38]
 [ext_resource path="res://Assets/hedgeCorner.tscn" type="PackedScene" id=39]
 [ext_resource path="res://Assets/hedge.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Assets/goldCoin.tscn" type="PackedScene" id=41]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 50, 50 )
@@ -1147,10 +1148,16 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1056, 6, 20.0936 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2996, 6, 17.304 )
 
 [node name="hedgeCorner" parent="." instance=ExtResource( 39 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 8, 0, 1, 0, -4.37114e-08, 24, 0, 24 )
+transform = Transform( -1, 0, 8.74228e-08, 0, 8, 0, -8.74228e-08, 0, -1, 24, 0, 24 )
 
 [node name="hedgeCorner2" parent="." instance=ExtResource( 39 )]
-transform = Transform( -1, 0, 1.50996e-07, 0, 8, 0, -1.50996e-07, 0, -1, 24, 0, 24 )
+transform = Transform( -1.07284e-07, 0, -1, 0, 8, 0, 1, 0, -1.07284e-07, 24, 0, 24 )
+
+[node name="hedgeCorner5" parent="." instance=ExtResource( 39 )]
+transform = Transform( -1.07284e-07, 0, -1, 0, 8, 0, 1, 0, -1.07284e-07, 22.1932, 0, 24 )
+
+[node name="hedgeCorner6" parent="." instance=ExtResource( 39 )]
+transform = Transform( -1, 0, 1.50996e-07, 0, 8, 0, -1.50996e-07, 0, -1, 21.8048, 0, 24 )
 
 [node name="hedgeCorner3" parent="." instance=ExtResource( 39 )]
 transform = Transform( 1, 0, -6.3573e-08, 0, 8, 0, 6.3573e-08, 0, 1, 24, 0, 21 )
@@ -1167,6 +1174,18 @@ transform = Transform( -1, 0, -1.50996e-07, 0, 8, 0, 1.50996e-07, 0, -1, 24, 0, 
 [node name="hedge4" parent="." instance=ExtResource( 40 )]
 transform = Transform( -1, 0, -1.50996e-07, 0, 8, 0, 1.50996e-07, 0, -1, 24, 0, 22 )
 
+[node name="hedge7" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 8, 0, 1.50996e-07, 0, -1, 23, 0, 22 )
+
+[node name="hedge8" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 8, 0, 1.50996e-07, 0, -1, 23, 0, 23 )
+
+[node name="hedge10" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 8, 0, 1.50996e-07, 0, -1, 21.8049, 0, 23 )
+
+[node name="hedge9" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.94707e-07, 0, -1, 0, 8, 0, 1, 0, 1.94707e-07, 21.5683, 0, 24 )
+
 [node name="hedge2" parent="." instance=ExtResource( 40 )]
 transform = Transform( 1, 0, 0, 0, 8, 0, 0, 0, 1, 24, 0, 23 )
 
@@ -1175,3 +1194,126 @@ transform = Transform( 1, 0, 0, 0, 8, 0, 0, 0, 1, 24, 0, 22 )
 
 [node name="hedge6" parent="." instance=ExtResource( 40 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 24, 0, 22 )
+
+[node name="hedge11" parent="." instance=ExtResource( 40 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 24, 0, 21 )
+
+[node name="hedge12" parent="." instance=ExtResource( 40 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 22, 0, 22 )
+
+[node name="hedge13" parent="." instance=ExtResource( 40 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 21, 0, 22 )
+
+[node name="hedge14" parent="." instance=ExtResource( 40 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 20, 0, 22 )
+
+[node name="hedge15" parent="." instance=ExtResource( 40 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 20, 0, 23 )
+
+[node name="hedge16" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 8, 0, 8.74228e-08, 0, -1, 20, 0, 23 )
+
+[node name="hedge20" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 8, 0, 1, 0, 1.31134e-07, 20, 0, 24 )
+
+[node name="hedge21" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 8, 0, 1, 0, 1.31134e-07, 19, 0, 24 )
+
+[node name="hedge22" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 8, 0, 1, 0, 1.31134e-07, 18, 0, 24 )
+
+[node name="hedge23" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 8, 0, 1, 0, 1.31134e-07, 17, 0, 24 )
+
+[node name="hedge36" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 8, 0, -8.74228e-08, 0, -1, 18, 0, 24 )
+
+[node name="hedge37" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 8, 0, -8.74228e-08, 0, -1, 18, 0, 23 )
+
+[node name="hedge38" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 8, 0, -8.74228e-08, 0, -1, 18, 0, 21 )
+
+[node name="hedge24" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 8, 0, 1, 0, 1.31134e-07, 19, 0, 23 )
+
+[node name="hedge25" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 8, 0, 1, 0, 1.31134e-07, 18, 0, 23 )
+
+[node name="hedge26" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 8, 0, 8.74228e-08, 0, -1, 19, 0, 23 )
+
+[node name="hedge27" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 8, 0, 8.74228e-08, 0, -1, 19, 0, 22 )
+
+[node name="hedge28" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 8, 0, 8.74228e-08, 0, -1, 19, 0, 21 )
+
+[node name="hedge29" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 19, 0, 21 )
+
+[node name="hedge35" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 18, 0, 21 )
+
+[node name="hedge30" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 20, 0, 21 )
+
+[node name="hedge31" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 21, 0, 21 )
+
+[node name="hedge33" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 21, 0, 21 )
+
+[node name="hedge39" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 21, 0, 20 )
+
+[node name="hedge40" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 24, 0, 19 )
+
+[node name="hedge45" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 24, 0, 18 )
+
+[node name="hedge46" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 24, 0, 17 )
+
+[node name="hedge47" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 25, 0, 17 )
+
+[node name="hedge48" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 24, 0, 17 )
+
+[node name="hedge49" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 23, 0, 17 )
+
+[node name="hedge50" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.09643e-08, 0, 8, 0, 8.09643e-08, 0, -1, 23, 0, 16 )
+
+[node name="hedge42" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 21, 0, 19 )
+
+[node name="hedge43" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 23, 0, 19 )
+
+[node name="hedge44" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 24, 0, 19 )
+
+[node name="hedge41" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, -6.45849e-09, 0, 8, 0, 6.45849e-09, 0, 1, 24, 0, 20 )
+
+[node name="hedge34" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.09643e-08, 0, 8, 0, 8.09643e-08, 0, -1, 18, 0, 20 )
+
+[node name="hedge32" parent="." instance=ExtResource( 40 )]
+transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 21, 0, 21 )
+
+[node name="hedge19" parent="." instance=ExtResource( 40 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 8, 0, 8.74228e-08, 0, -1, 20, 0, 22 )
+
+[node name="hedge17" parent="." instance=ExtResource( 40 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 8, 0, -1, 0, -4.37114e-08, 21, 0, 23 )
+
+[node name="hedge18" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, 0, 0, 8, 0, 0, 0, 1, 20, 0, 23 )
+
+[node name="goldCoin" parent="." instance=ExtResource( 41 )]
+transform = Transform( -0.642788, 0, -0.766045, 0, 1, 0, 0.766045, 0, -0.642788, 19.5655, 0.359635, 22.673 )
