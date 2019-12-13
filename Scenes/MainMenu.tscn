@@ -14,10 +14,14 @@ margin_bottom = 600.0
 texture = ExtResource( 1 )
 
 [node name="Play" type="Button" parent="."]
+show_behind_parent = true
 margin_left = 410.0
 margin_top = 290.0
 margin_right = 624.0
 margin_bottom = 366.0
+custom_colors/font_color = Color( 0.2, 0.388235, 0.262745, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.917647, 0.239216, 1 )
 icon = ExtResource( 2 )
 script = ExtResource( 3 )
 [connection signal="pressed" from="Play" to="Play" method="_on_Play_pressed"]
