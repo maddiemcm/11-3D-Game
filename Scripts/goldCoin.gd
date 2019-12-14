@@ -8,4 +8,9 @@ func _physics_process(delta):
 	
 func _on_goldCoin_body_entered(body):
 	if body.name == "Character":
-		print("collect")
+		$Timer.start()
+		
+func _on_Timer_timeout():
+	emit_signal("coinCollected")
+	queue_free()
+ 
