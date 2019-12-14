@@ -7,13 +7,23 @@ var spin = 0.1
 
 var velocity = Vector3()
 var jump = false
-	
+
+signal score
+
+func _ready():
+	contact_monitor = true
+	set_max_contacts_repoorted(1)
+	var WorldNode = get_node("/root/World")
+	connect("Coins", WorldNode, "increase_score")
+
 func _physics_process(delta):
 	velocity += gravity * delta
 	get_input()
 	velocity = move_and_slide(velocity, Vector3.UP)
 	if jump and is_on_floor():
 		velocity.y = jump_speed
+	var bodies = get_colliding_bodies()
+	
 	
 func get_input():
 	var vy = velocity.y

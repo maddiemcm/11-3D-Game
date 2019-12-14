@@ -1,10 +1,7 @@
 extends Label
 
-var coins = 0
-
 func _ready():
-	text = "Coins: " + String(coins)
+	_on_Coin_Collected()
 
 func _on_Coin_Collected():
-	coins = coins + 1
-	_ready()
+	text = "Coins: " + String(get_parent().score)
