@@ -67,8 +67,7 @@ font_data = ExtResource( 42 )
 [node name="World" type="Spatial"]
 
 [node name="Character" parent="." instance=ExtResource( 1 )]
-editor/display_folded = true
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 23.9287, 0.304279, 24 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 19.9287, 0.304279, 17 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Character"]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -7.85748, 0.934931, 0 )
@@ -76,7 +75,6 @@ stream = ExtResource( 2 )
 autoplay = true
 
 [node name="ground" type="StaticBody" parent="."]
-editor/display_folded = true
 
 [node name="MeshInstance" type="MeshInstance" parent="ground"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0268035, -0.0209159, 0.0348085 )
@@ -1314,10 +1312,12 @@ transform = Transform( -3.72529e-08, 0, 1, 0, 8, 0, -1, 0, -3.72529e-08, 19, 0, 
 transform = Transform( -1, 0, -8.74228e-08, 0, 8, 0, 8.74228e-08, 0, -1, 19, 0, 21 )
 
 [node name="Coins2" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="goldCoin" parent="Coins2" instance=ExtResource( 41 )]
 transform = Transform( -0.642788, 0, -0.766045, 0, 1, 0, 0.766045, 0, -0.642788, 19.5655, 0.359635, 22.673 )
+
+[node name="goldCoin2" parent="Coins2" instance=ExtResource( 41 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 17.9287, 0.304279, 17 )
 
 [node name="Control" type="Control" parent="."]
 margin_left = -0.658875
