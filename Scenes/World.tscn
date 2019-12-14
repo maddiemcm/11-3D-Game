@@ -1355,3 +1355,4 @@ custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Time:"
 valign = 1
+[connection signal="coinCollected" from="Coins2/goldCoin" to="Control/Coins" method="_on_Coin_Collected"]

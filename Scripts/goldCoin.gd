@@ -1,5 +1,7 @@
 extends Area
 
+signal coinCollected
+
 func _ready():
 	pass
 	
