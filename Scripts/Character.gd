@@ -11,8 +11,6 @@ var jump = false
 signal score
 
 func _ready():
-	contact_monitor = true
-	set_max_contacts_repoorted(1)
 	var WorldNode = get_node("/root/World")
 	connect("Coins", WorldNode, "increase_score")
 
