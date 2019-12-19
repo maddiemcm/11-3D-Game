@@ -20,7 +20,6 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector3.UP)
 	if jump and is_on_floor():
 		velocity.y = jump_speed
-	var bodies = get_colliding_bodies()
 	
 	
 func get_input():
